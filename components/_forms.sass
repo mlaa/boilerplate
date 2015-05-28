@@ -1,9 +1,15 @@
 // Form elements
 
-input[type="text"], textarea
+input[type="text"], textarea,
+// This needs to be super-specific to override bbpress.css.
+#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content
   +recessed
 
+// This border seems to be missing, for some mysterious reason.
+#bbpress-forums div.wp-editor-container
+  border: 1px solid #e5e5e5
+
+// Don't show submit buttons, since the user will probably press
+// enter anyway.
 .dir-search input[type="submit"]
-  // don't show submit buttons, since the user will probably press
-  // enter anyway.
   display: none;

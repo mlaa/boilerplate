@@ -1,15 +1,21 @@
 // Masthead
 #main-site-header
-  display: flex
-  align-items: baseline
-  +tile
+  display: block
+  text-align: center
+  padding: 3em 1em 0
+  background-color: $flat-toothpaste-color
   .brand
-    flex: 1 0
-    font-size: $size-l
+    font-size: $size-xl
+    margin-top: 1em
     font-weight: $header-bold
-    color: $black
+    color: $flat-white
     white-space: nowrap
   nav
     display: inline
     @extend .tabarea-horizontal
-    font-size: $size-ms
+    font-size: $size-m
+    margin-bottom: 0
+    a
+      color: $flat-white
+      &hover
+        border-bottom: 2px solid $flat-white

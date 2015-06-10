@@ -9,7 +9,7 @@ $progress-shadow-color: #f5f5f5
   margin: 0.5em 0 0 0
   padding: 0
 
-.progress-tracker-step
+.progress-tracker li
   display: inline-block
   padding: 0.4em
   >
@@ -33,7 +33,7 @@ $progress-shadow-color: #f5f5f5
       position: absolute
       top: 3px
       width: 10px
-  + .progress-tracker-step >
+  + .progress-tracker li >
     span:after,
     a:after
       background: $progress-active-color
@@ -53,7 +53,7 @@ $progress-shadow-color: #f5f5f5
       right: 50%
       top: 4px
 
-.progress-tracker-step-current
+.progress-tracker li.current
   font-weight: $text-bold
   ~ .progress-tracker-step
     span:before,

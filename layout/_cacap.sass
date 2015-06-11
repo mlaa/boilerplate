@@ -1,0 +1,93 @@
+/* This file contains styles for
+ * CAC-Advanced-Profiles (CACAP), which we call "Portfolios." */
+
+/* CACAP CSS is still getting loaded here,
+ * so we have to override some things
+ */
+
+#cacap-edit
+  margin-top: 2em
+
+.link-to-mla-org
+  font-size: 1.2em
+  margin-top: 0.6em
+
+#cacap-user-widget-new
+  background-color: #efefef
+  border-bottom: 2px solid #eee
+  border-top: 2px solid #eee
+  width: 100%
+  padding: 10px 0
+  #cacap-user-widget-new-content
+    text-align: center
+  #cacap-new-widget-types
+    line-height: 1em
+    a
+      text-decoration: none
+    li
+      @extend button
+      border-radius: 5px
+      width: 100px
+      display: inline-block
+      vertical-align: top
+      text-align: center
+      height: 90px
+      margin-right: 10px
+      padding: 3px
+      padding-top: 22px
+      line-height: 1.1em
+      cursor: pointer
+      margin-bottom: 10px
+      &.cacap-has-max
+        opacity: .4
+        .cacap-has-max-tooltip
+          position: absolute
+          font-size: .9em
+          Height: 1.4em
+          background: #fff
+          border: 1px solid #666
+          opacity: 2
+          color: #000
+          display: none
+        &:hover
+          cursor: default
+          background-color: #FAFAFA
+          .cacap-has-max-tooltip
+            display: block
+          a
+            cursor: default
+            color: #333
+      .cacap-widget-type-name
+        display: block
+        color: #333
+        line-height: 1.2em
+      .cacap-plus
+        font-size: 60px
+        color: #333
+
+/* --- Welcome "Bubble" Modal Dialog for CACAP {{{3 ---
+
+.remodal-confirm
+  @extend button
+  padding: 12px
+  font-size: 14px
+
+.remodal-close
+  display: none
+  /* disable X button to clean it up a bit
+
+/* --- End Welcome "Bubble" Modal Dialog for CACAP }}} ---
+
+/* --- CACAP Hacks {{{3 ---
+
+/* This is a somewhat unfortunate hack to hide Xprofile fields in
+ * CACAP. Removing the template doesn't quite do the trick, since
+ * that apparently causes CACAP not to save properly.
+ * But look in cac-advanced-profiles/templates/cacap/bp-profile-fields-edit.php
+ * and maybe there's a way to remove those entries and still have CACAP
+ * save everything properly?
+.cacap-bp-profile-fields
+  display: none
+/* --- End CACAP Hacks }}} --- */
+
+/* --- End CACAP Portfolio / Profile --- }}} */

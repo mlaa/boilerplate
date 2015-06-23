@@ -2,7 +2,7 @@
  * CAC-Advanced-Profiles (CACAP), which we call "Portfolios." */
 
 /* CACAP CSS is still getting loaded here,
- * so we have to override some things
+ * so we have to override some things, unfortunately.
  */
 
 #cacap-edit
@@ -65,7 +65,7 @@
         font-size: 60px
         color: #333
 
-/* --- Welcome "Bubble" Modal Dialog for CACAP {{{3 ---
+// Welcome "Bubble" Modal Dialog for CACAP
 
 .remodal-confirm
   @extend button
@@ -73,12 +73,10 @@
   font-size: 14px
 
 .remodal-close
+  // disable X button to clean it up a bit
   display: none
-  /* disable X button to clean it up a bit
 
-/* --- End Welcome "Bubble" Modal Dialog for CACAP }}} ---
-
-/* --- CACAP Hacks {{{3 ---
+// CACAP Hacks
 
 /* This is a somewhat unfortunate hack to hide Xprofile fields in
  * CACAP. Removing the template doesn't quite do the trick, since
@@ -88,6 +86,3 @@
  * save everything properly?
 .cacap-bp-profile-fields
   display: none
-/* --- End CACAP Hacks }}} --- */
-
-/* --- End CACAP Portfolio / Profile --- }}} */

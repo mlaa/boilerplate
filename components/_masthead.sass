@@ -3,18 +3,14 @@
   display: block
   text-align: center
   padding: 3em 1em 0
-  background-color: white
+  background-color: #3A3A50
   .brand
     font-size: $size-xl
     margin-top: 1em
     font-weight: $header-bold
-    color: #333
+    color: white
     white-space: nowrap
   nav
-    +tabs
+    +tabs($color: white)
     font-size: $size-m
     margin-bottom: 0
-    a
-      color: #333
-      &hover
-        border-bottom: 2px solid $flat-white

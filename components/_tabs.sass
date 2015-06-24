@@ -1,35 +1,22 @@
 // Tabs
 
-$tabcolor: #333
-
-=tabs($direction: 'horizontal')
+=tabs($color: white)
   ul
     // reset some things
     padding: 0
     margin: 0
   li
     list-style: none
+    display: inline
+    border-bottom: 4px solid transparent
     a
       display: inline-block
       padding: 0.6em 0.4em
+      color: $color
   li.current a,
   li.current-menu-item a,
+  li.current_page_item a,
   li.selected a,
   li a:hover,
     text-decoration: none
-    border-bottom: 4px solid $tabcolor
-  @if $direction == 'horizontal'
-    li
-      display: inline
-      &.current a
-        border-color: $mla-blue
-        text-decoration: none
-        color: $black
-      a
-        border-bottom: 2px solid transparent
-        margin: 0 2px
-  @if $direction == 'vertical'
-    .tab
-      border-left: 2px solid transparent
-      display: block
-      margin: 5px 0
+    border-bottom: 4px solid $color

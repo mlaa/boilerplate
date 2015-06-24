@@ -8,19 +8,25 @@
   input
     width: 80%
     max-width: 35em
+    padding: 0.7em
 
 // These are not bullet points.
 .bbp-topics, .bbp-replies
   li
     list-style-type: none
+    margin: 2em 0
 
 .bbp-pagination
   @extend .pagination
+
+a.bbp-topic-permalink
+  font-size: $size-m
 
 // Replies list (expanded single thread)
 
 // Center things
 #bbpress-forums > h3,
+#bp-group-documents > h3,
 .bbp-topic-tags,
 .bbp-header
   text-align: center
@@ -31,7 +37,7 @@
   a.subscription-toggle, a.favorite-toggle
     +button
 
-
+// Each post in the thread
 #mla-bbp-reply
   +tile
   margin: 1em
@@ -44,6 +50,7 @@
   .bbp-reply-author
     margin-right: 2em
 
+// "Create a New Post"
 form#new-post
   +tile
   margin: 1em

@@ -1,4 +1,4 @@
-button, .button, .generic-button a
+=button
   +tile
   padding: 1em
   display: inline-block
@@ -13,10 +13,13 @@ button, .button, .generic-button a
     border: 1px solid $button-border-color
     border-bottom: 2px solid $button-border-color
 
+button, .button, .generic-button a
+ +button
+
 .pagination,
   display: flex
   .pag-count
     flex: 1
   .pagination-links > .page-numbers,
   .page-numbers
-    @extend button
+    +button

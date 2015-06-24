@@ -9,6 +9,7 @@
     width: 80%
     max-width: 35em
 
+// These are not bullet points.
 .bbp-topics, .bbp-replies
   li
     list-style-type: none
@@ -17,10 +18,38 @@
   @extend .pagination
 
 // Replies list (expanded single thread)
-form#new-post legend
-  font-size: $size-l
 
+// Center things
 #bbpress-forums > h3,
-.bbp-topic-tags
+.bbp-topic-tags,
+.bbp-header
   text-align: center
 
+// Usually the "button box" with buttons for subscribing and
+// favoriting the current thread.
+.bbp-header
+  a.subscription-toggle, a.favorite-toggle
+    +button
+
+
+#mla-bbp-reply
+  +tile
+  margin: 1em
+  .bbp-reply-header, .topic, .reply
+    margin: 2em
+  .topic, .reply
+    display: flex
+  .bbp-admin-links a
+    +button
+  .bbp-reply-author
+    margin-right: 2em
+
+form#new-post
+  +tile
+  margin: 1em
+  padding: 1em
+  legend
+    font-size: $size-l
+  fieldset
+    // this resets a border drawn by normalize.css
+    border: none

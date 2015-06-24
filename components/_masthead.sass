@@ -3,19 +3,18 @@
   display: block
   text-align: center
   padding: 3em 1em 0
-  background-color: $flat-toothpaste-color
+  background-color: white
   .brand
     font-size: $size-xl
     margin-top: 1em
     font-weight: $header-bold
-    color: $flat-white
+    color: #333
     white-space: nowrap
   nav
-    display: inline
-    @extend .tabarea-horizontal
+    +tabs
     font-size: $size-m
     margin-bottom: 0
     a
-      color: $flat-white
+      color: #333
       &hover
         border-bottom: 2px solid $flat-white

@@ -9,18 +9,22 @@
   list-style-type: none
   li
     +tile
-    flex: 1
+    flex: 1 1 25em
     margin: 1em
     display: flex
     align-items: center
-    padding: 1%
+    padding: 1em 1em 1em 0
     .item-avatar
       margin-right: 1em
+      img
+        display: block
     .item
-      flex-grow: 1
       min-width: 9em //temporary
-    &.activity-item
-      flex: 1 1 100%; // full width activity items for the moment
+      padding-right: 1%
+      .item-title
+        font-size: $size-m
+        .update
+          font-size: $size-xs
 
 #item-header
   +content

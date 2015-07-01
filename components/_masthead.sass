@@ -2,15 +2,18 @@
 #main-site-header
   display: block
   text-align: center
-  padding: 3em 1em 0
-  background-color: #3A3A50
+  padding: 1em 1em 0
+  background-color: $nav-primary-background-color
   .brand
+    @extend h1
+    text-shadow: 1px 1px 1px rgba( 100, 100, 100, 0.5 )
+    margin: 0.2em 0 0
     font-size: $size-xl
-    margin-top: 1em
-    font-weight: $header-bold
+    font-weight: 400
     color: white
     white-space: nowrap
   nav
+    font-family: $header-font-family
     +tabs($color: white)
     font-size: $size-m
     margin-bottom: 0

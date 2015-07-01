@@ -1,8 +1,13 @@
 nav.secondary, #item-nav, .item-list-tabs
   +tabs($color: white)
-  background-color: #345568
+  font-family: $header-font-family
+  background-color: $nav-secondary-background-color
   text-align: center
   li
     display: inline
     font-size: $size-m
     margin: 1em 1em 0
+
+nav.tertiary, #item-body #subnav // tertiary nav
+  font-family: $header-font-family
+  background-color: $nav-tertiary-background-color

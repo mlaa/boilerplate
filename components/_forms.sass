@@ -11,7 +11,17 @@ input[type="text"], textarea,
 
 // Don't show submit buttons, since the user will probably press
 // enter anyway.
-.dir-search input[type="submit"],
-#bbp-searchform input[type="submit"],
-#search-members-form input[type="submit"]
-  display: none;
+.dir-search,
+#bbp-searchform,
+#search-members-form,
+#search-message-form
+  text-align: center
+  margin: 3em
+  input
+    width: 80%
+    max-width: 35em
+    padding: 0.7em
+  input[type="submit"]
+    display: none;
+
+

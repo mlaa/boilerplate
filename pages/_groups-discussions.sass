@@ -39,6 +39,17 @@ a.bbp-topic-permalink
     +button
   .bbp-reply-author
     margin-right: 2em
+  .bbp-meta
+    padding: 1em
+    background-color: $level-minus-one-color
+    border-top: 2px solid #ddd // drawer effect
+    display: flex
+    > *
+      align-self: baseline
+    a:empty
+      display: none
+    .bbp-admin-links
+      margin-left: auto
 
 // "Create a New Post"
 form#new-post

@@ -39,8 +39,12 @@ textarea#whats-new,
     border: 1px solid darken( $page-background-color, 4%) // these are different kinds of buttons
     border-radius: 0
 
-// Don't show images in activities.
-// They have unpredictable dimensions and are hard to style
-// so that they look good.
-.activity-inner p a img
-  display: none
+.activity-inner
+  margin-left: 0.5em
+  padding-left: 0.5em
+  border-left: 3px solid #eee
+  p a img
+    // Don't show images in activities.
+    // They have unpredictable dimensions and are hard to style
+    // so that they look good.
+    display: none

@@ -19,7 +19,13 @@ img.bp-group-documents-icon
 .bp-group-documents-title
   font-size: $size-m
 
+// --- Hacks!
+
+// At the time of writing, this contained a way to sort files,
+// but it doesn't seem very useful
 #bp-group-documents #subnav
-  // at the time of writing, this contained a way to sort files,
-  // but it doesn't seem very useful
   display: none
+
+// There was a hard-coded icon here. This disables that icon.
+li#nav-documents-groups-li
+  background: transparent

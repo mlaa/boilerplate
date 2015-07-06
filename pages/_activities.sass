@@ -26,18 +26,32 @@ textarea#whats-new,
     margin: 0 auto
     font-size: $size-m
 
+li
+  &.bbp_topic_create,
+  &.bbp_reply_create,
+  &.new_blog_comment,
+  &.new_groupblog_post,
+    // These types of activity items are usually pretty big.
+    // Let's make them take up the whole width.
+    flex: 1 1 100%
+
 .activity-meta
   background-color: #ddd
+  margin-left: auto
   display: flex
   height: 100%
   flex-direction: column
   > a
+    color: #ccc
     flex: 1 // fill the whole thing
     display: flex // for the content
     justify-content: center
+    align-items: center
     background-color: $page-background-color
     border: 1px solid darken( $page-background-color, 4%) // these are different kinds of buttons
     border-radius: 0
+    &:hover
+      color: #777
 
 .activity-inner
   margin-left: 0.5em

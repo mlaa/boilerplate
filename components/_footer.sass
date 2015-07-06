@@ -1,17 +1,16 @@
 // Footer
 
-.site-footer
-  background-color: $mla-blue
-  bottom: 0
-  color: $white
-  height: 3em
-  padding: 0
-  position: absolute
-  width: 100%
-  p
-    line-height: 3em
-    margin: 0
-    padding: 0
-    text-align: center
-  a
-    color: $white
+footer
+  background-color: $footer-bg-color
+  color: $footer-text
+  .textwidget
+    display: flex
+    .column
+      padding: 1em
+      flex: 1
+      text-align: center
+      border: lighten( $footer-bg-color, 10% )
+      &:first-child
+        text-align: right
+      &:last-child
+        text-align: left

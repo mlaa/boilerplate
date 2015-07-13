@@ -2,13 +2,17 @@
 
 body.dashboard div.content
   display: flex
+  +breakpoint(xs)
+    flex-direction: column //full-width sidebars on mobile
   main.main
     flex: 2 // two thirds
   aside.sidebar
     flex: 1
 
+
 .widget_mla_bp_profile_area
-  display: flex
+  .user_profile
+    display: flex
   padding: 1em
   background-color: $nav-tertiary-background-color
   color: $nav-text-color
@@ -16,4 +20,19 @@ body.dashboard div.content
     margin-right: 1em
   .name
     font-size: $size-m
+  #profile_button
+    text-align: center
+    padding: 1em
+  .links
+    display: flex
+    padding: 1em
+    justify-content: space-around
 
+.widget_rss, .widget_text, .widget_links
+  list-style-type: none
+
+.widget_rss // MLA News
+  a img // the RSS icon
+    display: none // don't show the RSS icon
+.widget_text // MLA Sites
+.widget_links // Member Resources

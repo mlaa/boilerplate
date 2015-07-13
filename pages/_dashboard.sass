@@ -1,8 +1,19 @@
 // Dashboard
 
-body.dashboard main.main
+body.dashboard div.content
   display: flex
-  main#mla-newsfeed-area
+  main.main
     flex: 2 // two thirds
-  aside#mla-sidebar
+  aside.sidebar
     flex: 1
+
+.widget_mla_bp_profile_area
+  display: flex
+  padding: 1em
+  background-color: $nav-tertiary-background-color
+  color: $nav-text-color
+  img.avatar
+    margin-right: 1em
+  .name
+    font-size: $size-m
+

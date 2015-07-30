@@ -3,14 +3,9 @@
 footer
   background-color: $footer-bg-color
   color: $footer-text
-  .textwidget
-    display: flex
-    .column
-      padding: 1em
-      flex: 1
-      text-align: center
-      border: lighten( $footer-bg-color, 10% )
-      &:first-child
-        text-align: right
-      &:last-child
-        text-align: left
+  display: flex
+  section.widget
+    padding: 1em
+    a
+      color: $footer-text
+      text-decoration: underline

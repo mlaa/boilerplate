@@ -1,0 +1,13 @@
+// Hidden-by-default elements
+
+.print-only {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+// Don't show activity avatars for groups.
+//.activity-header > p > a > img.avatar
+// //display: none

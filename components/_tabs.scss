@@ -1,0 +1,27 @@
+// Tabs
+
+@mixin tabs($color: white) {
+  ul {
+    // reset some things
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    a {
+      display: inline-block;
+      padding: 0.6em 0.4em;
+      color: $color;
+      border-bottom: 4px solid transparent;
+    }
+  }
+  li.current a,
+  li.current-menu-item a,
+  li.current_page_item a,
+  li.selected a,
+  li a:hover {
+    text-decoration: none;
+    border-bottom: 4px solid $color;
+  }
+}

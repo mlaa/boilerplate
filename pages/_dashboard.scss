@@ -1,0 +1,58 @@
+// Dashboard
+
+body.dashboard main.main {
+  display: flex;
+  @include breakpoint(xs) {
+    flex-direction: column;
+  }
+
+  div#buddypress {
+    flex: 2;
+  }
+  aside.sidebar {
+    flex: 1;
+  }
+}
+
+.widget_mla_bp_profile_area {
+  .user_profile {
+    display: flex;
+  }
+  padding: 1em;
+  background-color: $nav-tertiary-background-color;
+  color: $nav-text-color;
+  img.avatar {
+    margin-right: 1em;
+  }
+  .name {
+    font-size: $size-m;
+  }
+  #profile_button {
+    text-align: center;
+    padding: 1em;
+  }
+  .links {
+    display: flex;
+    padding: 1em;
+    justify-content: space-around;
+  }
+}
+
+.widget_rss, .widget_text, .widget_links {
+  list-style-type: none;
+}
+
+.widget_rss {
+  // MLA News
+  a img {
+    display: none;
+  }
+}
+
+.widget_text {
+  // MLA Sites
+}
+
+.widget_links {
+  // Member Resources
+}

@@ -1,0 +1,16 @@
+// Styles for the search results page for the plugin BuddyPress Global Search
+
+.search-results {
+  .page-header, .bboss_search_form_wrapper {
+    text-align: center;
+  }
+}
+
+input.search-field {
+  @include recessed;
+  margin-bottom: 2em;
+}
+
+.search-submit {
+  display: none;
+}

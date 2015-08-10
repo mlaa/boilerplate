@@ -1,4 +1,6 @@
 linters:
+  IdSelector:
+    enabled: false
   LeadingZero:
     enabled: true
     style: include_zero

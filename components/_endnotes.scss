@@ -21,6 +21,7 @@ sup {
 sup a,
 [rel='footnote'],
 [rev='footnote'] {
+
   background-color: $endnote-background-color;
   border-radius: 5px;
   color: $endnote-text-color;
@@ -29,8 +30,10 @@ sup a,
   margin: 0 2px;
   padding: 2px 5px;
   text-decoration: none;
+
   &:hover {
     background-color: $endnote-background-hover-color;
     color: $endnote-text-hover-color;
   }
+
 }

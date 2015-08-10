@@ -2,23 +2,36 @@
 // a plugin made for file uploading.
 
 #bp-group-documents {
+
   text-align: center;
+
   h3 {
     font-size: $size-l;
   }
+
+  // At the time of writing, this contained a way to sort files,
+  // but it doesn't seem very useful
+  #subnav {
+    display: none;
+  }
+
 }
 
 #bp-group-documents-list {
+
   text-align: left;
+
   li {
     display: block;
   }
+
   .admin-links a {
     @include button;
   }
+
 }
 
-img.bp-group-documents-icon {
+.bp-group-documents-icon {
   display: none;
 }
 
@@ -26,15 +39,7 @@ img.bp-group-documents-icon {
   font-size: $size-m;
 }
 
-// --- Hacks!
-
-// At the time of writing, this contained a way to sort files,
-// but it doesn't seem very useful
-#bp-group-documents #subnav {
-  display: none;
-}
-
 // There was a hard-coded icon here. This disables that icon.
-li#nav-documents-groups-li {
+#nav-documents-groups-li {
   background: transparent;
 }

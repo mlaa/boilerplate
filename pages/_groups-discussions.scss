@@ -1,7 +1,11 @@
 // Discussions (forums in groups).
 
+// Colors
+$bbpress-meta-border-color: #ddd;
+
 // These are not bullet points.
-.bbp-topics, .bbp-replies {
+.bbp-topics,
+.bbp-replies {
   li {
     list-style-type: none;
     margin: 2em 0;
@@ -12,7 +16,7 @@
   @extend .pagination;
 }
 
-a.bbp-topic-permalink {
+.bbp-topic-permalink {
   font-size: $size-m;
 }
 
@@ -29,54 +33,74 @@ a.bbp-topic-permalink {
 // Usually the "button box" with buttons for subscribing and
 // favoriting the current thread.
 .bbp-header {
-  a.subscription-toggle, a.favorite-toggle {
+  .subscription-toggle,
+  .favorite-toggle {
     @include button;
   }
 }
 
 // Each post in the thread
 #mla-bbp-reply {
+
   @include tile;
   margin: 1em;
-  .bbp-reply-header, .topic, .reply {
+
+  .bbp-reply-header,
+  .topic,
+  .reply {
     margin: 2em;
   }
-  .topic, .reply {
+
+  .topic,
+  .reply {
     display: flex;
   }
+
   .bbp-admin-links a {
     @include button;
   }
+
   .bbp-reply-author {
     margin-right: 2em;
   }
+
   .bbp-meta {
-    padding: 1em;
+
     background-color: $level-minus-one-color;
-    border-top: 2px solid #ddd;
+    border-top: 2px solid $bbpress-meta-border-color;
     display: flex;
+    padding: 1em;
+
     > * {
       align-self: baseline;
     }
+
     a:empty {
       display: none;
     }
+
     .bbp-admin-links {
       margin-left: auto;
     }
+
   }
+
 }
 
 // "Create a New Post"
-form#new-post {
+#new-post {
+
   @include tile;
   margin: 1em;
   padding: 1em;
+
   legend {
     font-size: $size-l;
   }
+
   fieldset {
     // this resets a border drawn by normalize.css
-    border: none;
+    border: 0;
   }
+
 }

@@ -10,27 +10,33 @@ $good-example-color: #0f0;
 }
 
 .bad-example {
+
   padding-left: 1.25em;
   position: relative;
+
   &:before {
     color: $bad-example-color;
-    content: "✗";
+    content: '✗';
     display: inline-block;
     left: 0;
     position: absolute;
     vertical-align: middle;
   }
+
 }
 
 .good-example {
+
   padding-left: 1.25em;
   position: relative;
+
   &:before {
     color: $good-example-color;
-    content: "✓";
+    content: '✓';
     display: inline-block;
     left: 0;
     position: absolute;
     vertical-align: middle;
   }
+
 }

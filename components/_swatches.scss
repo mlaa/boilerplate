@@ -1,8 +1,9 @@
 // Color swatches
 
-$swatch-colors: fafafa eaeaea 777 555 444 "07d" 333 ffffe0;
+$swatch-colors: fafafa eaeaea 777 555 444 '07d' 333 ffffe0;
 
 .color-block {
+
   border: 1px solid $button-border-color;
   border-bottom: 2px solid $button-shadow-color;
   border-radius: 3px;
@@ -11,11 +12,13 @@ $swatch-colors: fafafa eaeaea 777 555 444 "07d" 333 ffffe0;
   margin: 1%;
   vertical-align: bottom;
   width: 200px;
+
   @each $color in $swatch-colors {
     &._#{$color} {
-      background-color: #{"#" + $color};
+      background-color: #{'#' + $color};
     }
   }
+
   .color-caption {
     background-color: $white;
     display: block;
@@ -23,4 +26,5 @@ $swatch-colors: fafafa eaeaea 777 555 444 "07d" 333 ffffe0;
     vertical-align: bottom;
     width: 100%;
   }
+
 }

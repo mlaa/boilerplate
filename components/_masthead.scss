@@ -1,22 +1,26 @@
 // Masthead
 #main-site-header {
-  display: block;
-  text-align: center;
-  padding: 1em 1em 0;
+
   background-color: $nav-primary-background-color;
+  display: block;
+  padding: 1em 1em 0;
+  text-align: center;
+
   .brand {
     @extend h1;
-    text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.5);
-    margin: 0.2em 0 0;
+    color: $white;
     font-size: $size-xl;
     font-weight: 400;
-    color: white;
+    margin: 0.2em 0 0;
+    text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.5);
     white-space: nowrap;
   }
+
   nav {
+    @include tabs($color: $white);
     font-family: $header-font-family;
-    @include tabs($color: white);
     font-size: $size-m;
     margin-bottom: 0;
   }
+
 }

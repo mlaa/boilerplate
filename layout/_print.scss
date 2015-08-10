@@ -1,6 +1,7 @@
 // Print styles
 
 @media print {
+
   @page {
     margin: 0.75in 0.5in;
     size: 8.5in 11in;
@@ -13,17 +14,21 @@
   body {
     font-size: 90%;
   }
+
   thead {
     display: table-header-group;
   }
+
   img {
     max-width: 100%;
   }
+
   // Avoid breaks
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3,
@@ -31,8 +36,10 @@
     orphans: 3;
     widows: 3;
   }
+
   // Show print-only elements
   .print-only {
     display: block;
   }
+
 }

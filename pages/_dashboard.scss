@@ -1,44 +1,59 @@
 // Dashboard
 
-body.dashboard main.main {
+// scss-lint:disable SelectorFormat
+
+.dashboard .main {
+
   display: flex;
+
   @include breakpoint(xs) {
     flex-direction: column;
   }
 
-  div#buddypress {
+  #buddypress {
     flex: 2;
   }
-  aside.sidebar {
+
+  .sidebar {
     flex: 1;
   }
+
 }
 
 .widget_mla_bp_profile_area {
+
+  background-color: $nav-tertiary-background-color;
+  color: $nav-text-color;
+  padding: 1em;
+
   .user_profile {
     display: flex;
   }
-  padding: 1em;
-  background-color: $nav-tertiary-background-color;
-  color: $nav-text-color;
-  img.avatar {
+
+  .avatar {
     margin-right: 1em;
   }
+
   .name {
     font-size: $size-m;
   }
+
   #profile_button {
-    text-align: center;
     padding: 1em;
+    text-align: center;
   }
+
   .links {
     display: flex;
-    padding: 1em;
     justify-content: space-around;
+    padding: 1em;
   }
+
 }
 
-.widget_rss, .widget_text, .widget_links {
+.widget_rss,
+.widget_text,
+.widget_links {
   list-style-type: none;
 }
 

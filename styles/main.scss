@@ -1,6 +1,5 @@
-// Automatically injected Bower dependencies via wiredep (never manually edit this block)
-// bower:scss
-// endbower
+// Vendor
+@import 'vendor/normalize';
 
 // Common
 @import 'utils/variables';
@@ -27,7 +26,6 @@
 @import 'base/tables';
 
 // Components
-// tabs are loaded first, since masthead depends on it
 @import 'components/tabs';
 @import 'components/alerts';
 @import 'components/buttons';

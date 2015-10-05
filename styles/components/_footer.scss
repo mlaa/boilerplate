@@ -1,20 +1,24 @@
 // Footer
 
-footer {
+.site-footer {
 
-  background-color: $footer-bg-color;
-  color: $footer-text;
-  display: flex;
+  background-color: $mla-blue;
+  bottom: 0;
+  color: $white;
+  height: 3em;
+  padding: 0;
+  position: absolute;
+  width: 100%;
 
-  .widget {
+  p {
+    line-height: 3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 
-    padding: 1em;
-
-    a {
-      color: $footer-text;
-      text-decoration: underline;
-    }
-
+  a {
+    color: $white;
   }
 
 }

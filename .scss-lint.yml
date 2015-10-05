@@ -1,3 +1,4 @@
+exclude: 'styles/vendor/**'
 linters:
   IdSelector:
     enabled: false
